@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="../../assets/libs/css/newprofile.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <link rel="icon" href="../../assets/images/header-logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link href="../../assets/vendors/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../../assets/vendors/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../../assets/vendors/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="../../assets/vendors/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="../../assets/vendors/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/charts/c3charts/c3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../assets/vendors/fonts/flag-icon-css/flag-icon.min.css">
+    <script src="https://kit.fontawesome.com/28d953b416.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <title>LMS | Content</title>
+    <!-- cdns for custom multi select -->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar topbar-rr navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html" style="font-size: 23px;">LMS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span>5</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="../../assets/images/avatar-2.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Name</span>Payment successful
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="../../assets/images/avatar-3.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Name</span>Payment is successful
+                                                        <div class="notification-date">2 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="../../assets/images/avatar-4.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Name</span> is successfully paid amount.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle" id="smallProfileImage"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name" id="iName">admin</h5>
+                                    <span class="status"></span><span class="ml-2">
+                                        <empty style="color: rgb(82, 243, 82);">•</empty> Available</span>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" onclick="logout()" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+
+        <div class="nav-left-sidebar sidebar-white">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="../../dashboard">LMS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="../Admin/admin.html"><i class="fas fa-chart-pie"></i>Dashboard</a>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="../courses/index.html"><i class="fas fa-book"></i>Courses</a>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../payment/index.html"><i class="fas fa-credit-card"></i>Payments</a>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="../content/index.html"><i class="fas fa-pencil-alt"></i>Content</a>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../settings/index.html"><i class="fas fa-cog"></i>Settings</a>
+                                            </li>
+                                            <li class="nav-item hi-sh-lg">
+                                                <a class="nav-link" href="#" onclick="logout()"><i class="fas fa-power-off"></i>Logout</a>
+                                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="cardd">
+                    <h3>Edit Your Website Content Here...</h3>
+                    <table class="table table-bordered" style="text-align: center;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="no1">No.</th>
+                                <th scope="col" class="size1">Content Name</th>
+                                <th scope="col" class="previewsize">Present</th>
+                                <th scope="col">Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Logo</td>
+                                <td><img src="../../logo.jpeg" class="imgres"></td>
+                                <input type="file" style="display: none;" id="one">
+                                <td><i class="fas fa-upload" style="cursor: pointer;" onclick="logo1()"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Image - 1</td>
+                                <input type="file" style="display: none;" id="two">
+                                <td><img src="../../img22.gif" class="imgres"></td>
+                                <td><i class="fas fa-upload" style="cursor: pointer;" onclick="img1()"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Contact image</td>
+                                <input type="file" style="display: none;" id="three">
+                                <td><img src="../../contact.gif" class="imgres"></td>
+                                <td><i class="fas fa-upload" style="cursor: pointer;" onclick="contimg()"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Content - 1</td>
+                                <td>WELCOME TO TRAINING ACADEMY</td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Enter Your text here...">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Content - 2</td>
+                                <td>We just introduce amazing Courses</td>
+                                <td>
+                                    <input type="text" class="form-control" placeholder="Enter Your text here...">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Content - 3</td>
+                                <td>Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop,
+                                    web, and business applications ....
+                                </td>
+                                <td>
+                                    <textarea rows="3" cols="40" class="form-control" placeholder="Enter Here..."></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>About content</td>
+                                <td>Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop,
+                                    web, and business applications ....
+                                </td>
+                                <td>
+                                    <textarea rows="5" cols="40" class="form-control" placeholder="Enter Here..."></textarea>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    <div class="btnstyle">
+                        <button class="btn btn-sm btn-primary b1">Save</button> &nbsp; &nbsp;
+                        <button class="btn btn-sm btn-primary b2" style="background-color: red;">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function logo1() {
+                document.getElementById('one').click();
+            }
+
+            function img1() {
+                document.getElementById('two').click();
+            }
+
+            function contimg() {
+                document.getElementById('three').click();
+            }
+        </script>
+        </script>
+        <script src="../../assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+
+        <script src="../../assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+
+        <script src="../../assets/vendors/charts/chartist-bundle/chartist.min.js"></script>
+
+</body>
+<!-- primary color : #5e72e4 -->
+
+</html>

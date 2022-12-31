@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.headercard {
+    background-color: rgb(137, 175, 209);
+    padding: .1rem;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hthree {
+    padding: .5rem;
+}
+
+.logoheader {
+    margin-right: 1rem;
+}

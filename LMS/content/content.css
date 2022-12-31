@@ -1,0 +1,35 @@
+.cardd {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem;
+}
+
+.size1 {
+    width: 15%;
+}
+
+.no1 {
+    width: 5%;
+}
+
+.previewsize {
+    width: 40%;
+}
+
+.imgres {
+    width: 45%;
+    height: 45%;
+}
+
+.btnstyle {
+    text-align: center;
+}
+
+.b1 {
+    margin-top: 3rem;
+}
+
+.b2 {
+    margin-top: 3rem;
+    background-color: red;
+}
